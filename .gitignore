@@ -1,0 +1,11 @@
+# API keys — never commit
+.env
+
+# Local link to the instructor's course repo (holds the Qdrant data); not ours to publish
+multi-agent-course
+
+# Notebook / Python / R / macOS clutter
+.Rhistory
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
