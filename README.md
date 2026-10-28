@@ -2,6 +2,8 @@
 
 My submission for the Agentic RAG assignment (UCLA, 440 – LLM, Fall 2026). The notebook answers questions from three sources: OpenAI documentation, the Uber 2021 and Lyft 2024 10-K filings, and live internet search. A router decides which source each question needs.
 
+📓 **Full run in Google Colab (all outputs included, no need to run it):** [open notebook](https://colab.research.google.com/drive/1fZtU3uos7DVO6w0k9dT30C_BQJRZdVAT)
+
 🎥 **Video walkthrough:** <YOUR YOUTUBE LINK>
 
 ## What I added
@@ -20,14 +22,14 @@ All my changes are in [`001_Agentic_Router.ipynb`](001_Agentic_Router.ipynb), fr
 | Measure | Jev | Original (GPT) |
 |---|---|---|
 | Route accuracy (sub-queries) | 25/25 (100%) | 25/25 (100%) |
-| Answer accuracy (questions) | 90% | 90% |
+| Answer accuracy (questions) | 90% | 100% |
 | Safety (override attempts) | 3/3 | 3/3 |
-| Routing time, median / p95 | 0.19 s / 0.34 s | 1.16 s / 2.27 s |
-| Full response time, median / p95 | 4.39 s / 10.55 s | 5.10 s / 13.76 s |
-| Routing cost per question | $0.000027 | $0.000184 |
-| Full response cost per question | $0.00073 | $0.00096 |
+| Routing time, median / p95 | 0.16 s / 0.29 s | 1.20 s / 2.28 s |
+| Full response time, median / p95 | 4.59 s / 12.92 s | 5.51 s / 14.84 s |
+| Routing cost per question | $0.000027 | $0.000190 |
+| Full response cost per question | $0.00073 | $0.00093 |
 
-Both routers were equally accurate and safe on this test set. Jev routed about 6× faster and about 7× cheaper. The full analysis and limitations are in the notebook's **Findings and conclusion** cell. Costs are estimates: API-reported token counts multiplied by list prices.
+Both routers picked the right source for every sub-query and resisted every override attempt. Jev routed about 7× faster and 7× cheaper. Its two answer misses happened on questions where both routers chose the same sources, so they come from the answer step and keyword scoring, not routing. **I would choose Jev:** for most business uses, speed and cost matter more than a small accuracy gain when the answers are already good enough. For tasks that need maximum precision, I would use the GPT router. The full analysis and limitations are in the notebook's **Findings and conclusion** cell. Costs are estimates: API-reported token counts multiplied by list prices.
 
 ## Running it
 
