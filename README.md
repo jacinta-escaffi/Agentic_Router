@@ -4,7 +4,7 @@ My submission for the Agentic RAG assignment (UCLA, 440 – LLM, Fall 2026). The
 
 📓 **Full run in Google Colab (all outputs included, no need to run it):** [open notebook](https://colab.research.google.com/drive/1ZNHAlgcFzDIfEyAGveqpLRwBmnEZbFy5)
 
-🎥 **Video walkthrough:** <YOUR YOUTUBE LINK>
+🎥 **Video walkthrough:** [watch video](https://youtu.be/_E5VVeKKZB4)
 
 ## What I added
 
