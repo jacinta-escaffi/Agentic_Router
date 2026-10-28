@@ -2,7 +2,7 @@
 
 My submission for the Agentic RAG assignment (UCLA, 440 – LLM, Fall 2026). The notebook answers questions from three sources: OpenAI documentation, the Uber 2021 and Lyft 2024 10-K filings, and live internet search. A router decides which source each question needs.
 
-📓 **Full run in Google Colab (all outputs included, no need to run it):** [open notebook](https://colab.research.google.com/drive/1fZtU3uos7DVO6w0k9dT30C_BQJRZdVAT)
+📓 **Full run in Google Colab (all outputs included, no need to run it):** [open notebook](https://colab.research.google.com/drive/1ZNHAlgcFzDIfEyAGveqpLRwBmnEZbFy5)
 
 🎥 **Video walkthrough:** <YOUR YOUTUBE LINK>
 
